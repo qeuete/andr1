@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#87CEFA"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="НАСТРОЙКИ"
+        android:textColor="#FF1493"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/editlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF1493"
+        android:text="Изменить логин"
+        android:textSize="20dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn" />
+
+    <TextView
+        android:id="@+id/editpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Изменить пароль"
+        android:textColor="#FF1493"
+        android:textSize="20dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/editlogin" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF1493"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="35dp"
+        android:padding="5dp"
+        android:background="@drawable/custom_textbox"
+        android:text="Изенение логина"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+
+        />
+
+    <EditText
+        android:id="@+id/login_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FF1493"
+        android:layout_marginBottom="35dp"
+        android:padding="5dp"
+        android:background="@drawable/custom_textbox"
+        android:text="Изменение пароля"
+        app:layout_constraintBottom_toTopOf="@+id/password_input"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/opis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF1493"
+        android:text="Здесь вы можете поменять свои настройки"
+        app:layout_constraintBottom_toTopOf="@+id/login_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_textbox"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:textColor="#FF1493"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:padding="10dp"
+        android:text="Сохранение сохранение сохранение сохранение"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="100dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
